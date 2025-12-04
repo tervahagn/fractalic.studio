@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Fractalic Studio — AI Advisory for Founders</title>
+  <meta name="title" content="Fractalic Studio — AI Advisory for Founders">
+  <meta name="description" content="Practical AI implementation for companies 5-150 people. No hype, clear processes, measurable outcomes. We help founders bring AI under control.">
+  <meta name="keywords" content="AI advisory, AI consulting, AI strategy, AI implementation, business AI, founder AI, practical AI">
+  <meta name="author" content="Fractalic Studio">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fractalic.studio">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fractalic.studio/">
+  <meta property="og:title" content="Fractalic Studio — AI Advisory for Founders">
+  <meta property="og:description" content="Practical AI implementation for companies 5-150 people. No hype, clear processes, measurable outcomes.">
+  <meta property="og:image" content="https://fractalic.studio/assets/images/og-image.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Fractalic Studio">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://fractalic.studio/">
+  <meta property="twitter:title" content="Fractalic Studio — AI Advisory for Founders">
+  <meta property="twitter:description" content="Practical AI implementation for companies 5-150 people. No hype, clear processes, measurable outcomes.">
+  <meta property="twitter:image" content="https://fractalic.studio/assets/images/og-image.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/logo-b.webp">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Fractalic Studio",
+    "description": "AI advisory for founders and leadership teams. We help companies design and implement practical AI systems with clear processes, clear metrics, and measurable impact.",
+    "url": "https://fractalic.studio",
+    "logo": "https://fractalic.studio/assets/images/logo-b.webp",
+    "image": "https://fractalic.studio/assets/images/og-image.png",
+    "priceRange": "$$$$",
+    "areaServed": "Worldwide",
+    "serviceType": ["AI Consulting", "AI Strategy", "AI Implementation Advisory"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "AI Advisory Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI Opportunity Audit",
+            "description": "2-week diagnostic to identify where AI can move real numbers in your business"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI Operating Blueprint",
+            "description": "4-6 week engagement to create a concrete AI roadmap with workflows, roles, and governance"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Implementation Advisory",
+            "description": "Ongoing retainer to keep your AI initiatives on track and connected to business outcomes"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Founder's AI Partner",
+            "description": "1:1 advisory to help founders leverage AI in their own workflow before rolling it company-wide"
+          }
+        }
+      ]
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Fractalic Studio Team"
+    },
+    "sameAs": []
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does 'practical AI' mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI that connects to real business outcomes — revenue, cost, risk, time. Not demos, not experiments without owners, not technology for its own sake."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Fractalic Studio different from AI consultancies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We don't sell transformation narratives. We map your existing structure, find where AI fits, and design systems with clear ownership. We build ourselves out, not in."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What size companies do you work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Primarily 5-150 people. Large enough to have real processes and constraints. Small enough that founders and leadership still own key decisions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you implement AI tools or just advise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both. We design the system (processes, roles, metrics) and can support implementation. But we always leave you with documentation and governance to run it without us."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a typical engagement last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI Opportunity Audit: 2 weeks. Operating Blueprint: 4-6 weeks. Implementation Advisory: ongoing retainer with defined scope."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What industries do you specialize in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We focus on business structure, not industry. Our work spans e-commerce, logistics, professional services, and SaaS. The common thread: founders who want AI under control, not AI controlling them."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with startups?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, if you have real revenue and repeatable work. If you're pre-product or still searching for product-market fit, AI strategy is premature."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens after the engagement ends?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You own everything: the documentation, the decision logs, the governance framework. We design for exit, not dependency."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="assets/images/logo-b.webp" alt="Fractalic Studio" class="nav__logo-img">
+        <span class="nav__logo-text">Fractalic Studio</span>
+      </a>
+      
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#approach" class="nav__link">Approach</a></li>
+          <li class="nav__item"><a href="#cases" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+        </ul>
+      </div>
+      
+      <a href="#contact" class="btn btn--primary nav__cta">Book a call</a>
+      
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__video-wrapper">
+        <video class="hero__video" autoplay muted loop playsinline>
+          <source src="assets/video/logo-anim-hd.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+      
+      <div class="hero__content container">
+        <h1 class="hero__title">AI that serves your business, not the hype.</h1>
+        <p class="hero__subtitle">Fractalic Studio helps founders and leadership teams design and implement practical AI systems: clear processes, clear metrics, measurable impact.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary btn--large">Book a 30-minute intro call</a>
+        </div>
+        <p class="hero__microcopy">No decks. We talk through your situation, then decide if it makes sense to work together.</p>
+      </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section section--alt" id="problem">
+      <div class="container">
+        <h2 class="section__title">The real AI problem isn't tools. It's chaos.</h2>
+        <div class="problem__grid">
+          <div class="problem__card">
+            <div class="problem__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 12h8M12 8v8"></path>
+              </svg>
+            </div>
+            <p class="problem__text">Teams are experimenting with random AI tools, but nothing is standardised or measured.</p>
+          </div>
+          <div class="problem__card">
+            <div class="problem__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+              </svg>
+            </div>
+            <p class="problem__text">Vendors sell "AI solutions" that look impressive in demos and disappear in operations.</p>
+          </div>
+          <div class="problem__card">
+            <div class="problem__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                <path d="M12 8v4l3 3"></path>
+              </svg>
+            </div>
+            <p class="problem__text">Leadership feels the pressure to "do something with AI" without a clear map, budget, or owner.</p>
+          </div>
+        </div>
+        <p class="problem__result">The result: noise, duplicated effort, no ownership, and no link to revenue, cost, or risk.</p>
+      </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section" id="approach">
+      <div class="container">
+        <h2 class="section__title">We turn AI noise into a controlled system.</h2>
+        <p class="section__intro">Fractalic Studio is a boutique advisory focused on one thing: making AI deployment legible and controllable for the people who actually own the business. No magic, no vendor lock-in, no buzzword decks.</p>
+        
+        <div class="pillars">
+          <div class="pillar">
+            <span class="pillar__number">01</span>
+            <h3 class="pillar__title">Diagnosis</h3>
+            <p class="pillar__text">We map where AI can actually move numbers in your business, given your model, team, and constraints.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar__number">02</span>
+            <h3 class="pillar__title">Design</h3>
+            <p class="pillar__text">We shape concrete workflows, roles, and guardrails where AI makes sense — and cut what doesn't.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar__number">03</span>
+            <h3 class="pillar__title">Delivery Support</h3>
+            <p class="pillar__text">We stay close while you run pilots, adjust the design, and turn experiments into operating routines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <h2 class="section__title">Services</h2>
+        
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__header">
+              <span class="service-card__duration">2 weeks</span>
+              <h3 class="service-card__title">AI Opportunity Audit</h3>
+            </div>
+            <p class="service-card__for"><strong>For:</strong> Founders and executives who want a sober view of where AI is worth the effort in their current business.</p>
+            <div class="service-card__deliverables">
+              <h4>You get:</h4>
+              <ul>
+                <li>A map of key processes and where AI can realistically help in the next 3–6 months.</li>
+                <li>A short list of initiatives ranked by impact, cost, and risk.</li>
+                <li>A one-page decision brief: what to start, what to park, what to ignore.</li>
+              </ul>
+            </div>
+            <div class="service-card__format">
+              <h4>Format:</h4>
+              <ul>
+                <li>2–3 stakeholder interviews</li>
+                <li>Review of current workflows and tools</li>
+                <li>60-minute readout call</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__header">
+              <span class="service-card__duration">4–6 weeks</span>
+              <h3 class="service-card__title">AI Operating Blueprint</h3>
+            </div>
+            <p class="service-card__for"><strong>For:</strong> Teams that have decided to move and need a concrete plan, not another inspirational talk.</p>
+            <div class="service-card__deliverables">
+              <h4>You get:</h4>
+              <ul>
+                <li>A 6–12 month AI roadmap with owners, timelines, and expected outcomes.</li>
+                <li>Designed workflows for 2–3 priority areas.</li>
+                <li>Defined roles, responsibilities, and basic governance: who decides, who maintains, who can change what.</li>
+              </ul>
+            </div>
+            <div class="service-card__format">
+              <h4>Format:</h4>
+              <ul>
+                <li>Working sessions with leadership and operators</li>
+                <li>Draft–review cycles on processes and policies</li>
+                <li>Final blueprint document plus implementation checklist</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__header">
+              <span class="service-card__duration">Retainer</span>
+              <h3 class="service-card__title">Implementation Advisory</h3>
+            </div>
+            <p class="service-card__for"><strong>For:</strong> Leaders who want an external partner to keep the plan honest and moving.</p>
+            <div class="service-card__deliverables">
+              <h4>You get:</h4>
+              <ul>
+                <li>Regular check-ins to track progress against the blueprint.</li>
+                <li>Fast feedback on vendor proposals, tooling choices, and scope creep.</li>
+                <li>Adjustments to workflows and metrics based on what actually happens.</li>
+              </ul>
+            </div>
+            <div class="service-card__format">
+              <h4>Format:</h4>
+              <ul>
+                <li>Fixed number of calls per month</li>
+                <li>Asynchronous review of documents and decisions</li>
+                <li>Rolling log of decisions and open issues</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__header">
+              <span class="service-card__duration">1:1</span>
+              <h3 class="service-card__title">Founder's AI Partner</h3>
+            </div>
+            <p class="service-card__for"><strong>For:</strong> Founders and executives who want to upgrade their own leverage with AI before rolling it across the company.</p>
+            <div class="service-card__deliverables">
+              <h4>You get:</h4>
+              <ul>
+                <li>Personal workflows for thinking, writing, analysis, and communication with AI as a force multiplier.</li>
+                <li>A private space to test new ways of working before exposing them to your team.</li>
+                <li>A sharper view of where AI belongs in your leadership — and where it doesn't.</li>
+              </ul>
+            </div>
+            <div class="service-card__format">
+              <h4>Format:</h4>
+              <ul>
+                <li>Two to three 1:1 sessions per month</li>
+                <li>Practical assignments between calls</li>
+                <li>Optional shadowing of key meetings (under NDA)</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section class="section" id="cases">
+      <div class="container">
+        <h2 class="section__title">Selected Work</h2>
+        <p class="section__intro">Anonymized examples of how we approach AI projects. Names and specific metrics withheld for confidentiality.</p>
+        
+        <div class="cases__grid">
+          <article class="case-card">
+            <span class="case-card__industry">Digital Marketing / SMB Operations</span>
+            <h3 class="case-card__title">Social Media Content Automation</h3>
+            <div class="case-card__section">
+              <h4>Challenge</h4>
+              <p>A growing business needed to maintain consistent social media presence across 5+ platforms without dedicated marketing staff. Content creation was ad-hoc, posting was manual, and there was no connection between content performance and business outcomes.</p>
+            </div>
+            <div class="case-card__section">
+              <h4>Approach</h4>
+              <p>Designed an AI-powered content workflow: automated content generation based on business context, intelligent scheduling with optimal timing, multi-platform publishing from single source, approval gates for quality control.</p>
+            </div>
+            <div class="case-card__section">
+              <h4>Outcome</h4>
+              <p>Reduced content creation time by 70%. Established repeatable publishing cadence. Created clear ownership: business owner approves, system executes.</p>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <span class="case-card__industry">E-commerce / Fashion Retail</span>
+            <h3 class="case-card__title">Virtual Try-On System</h3>
+            <div class="case-card__section">
+              <h4>Challenge</h4>
+              <p>An online fashion retailer faced high return rates (>30%) because customers couldn't visualize how clothing would look on them. Previous "virtual fitting" solutions were gimmicks that didn't affect purchase behavior.</p>
+            </div>
+            <div class="case-card__section">
+              <h4>Approach</h4>
+              <p>Built a practical virtual try-on system: realistic outfit visualization on user's body type, integration with existing product catalog, seamless checkout experience, explicit measurement tracking correlation between widget usage and return rates.</p>
+            </div>
+            <div class="case-card__section">
+              <h4>Outcome</h4>
+              <p>Widget deployed to production store. System designed with clear metrics: widget engagement → conversion rate → return rate impact. Ownership assigned to merchandising team.</p>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <span class="case-card__industry">Consumer Tech / Personal Productivity</span>
+            <h3 class="case-card__title">Digital Legacy System</h3>
+            <div class="case-card__section">
+              <h4>Challenge</h4>
+              <p>An individual wanted to preserve and structure their digital knowledge — documents, notes, decisions, personal history — in a way that could be useful for themselves and potentially their family.</p>
+            </div>
+            <div class="case-card__section">
+              <h4>Approach</h4>
+              <p>Designed a personal AI system: ingests and organizes disparate digital content, creates searchable AI-queryable knowledge base, maintains privacy with local-first architecture, simple enough to use daily.</p>
+            </div>
+            <div class="case-card__section">
+              <h4>Outcome</h4>
+              <p>Working prototype with local-first architecture. Clear scope: what stays private, what can be shared. User owns their data and the system that processes it.</p>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <span class="case-card__industry">Logistics / B2B Services</span>
+            <h3 class="case-card__title">Conversational AI for Customer Support</h3>
+            <div class="case-card__section">
+              <h4>Challenge</h4>
+              <p>A logistics company received hundreds of daily customer inquiries about shipment status, pricing, and delivery windows. Support staff spent 80% of time on repetitive queries, leaving complex issues unaddressed.</p>
+            </div>
+            <div class="case-card__section">
+              <h4>Approach</h4>
+              <p>Designed a conversational AI layer: connected to real-time shipment tracking, handled standard queries without human intervention, escalated complex cases with full context, tracked deflection rate and satisfaction.</p>
+            </div>
+            <div class="case-card__section">
+              <h4>Outcome</h4>
+              <p>Reduced routine query load on support team. Established clear handoff protocol: AI handles what it can, humans handle what they should. Metrics defined: response time, deflection rate, escalation quality.</p>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <span class="case-card__industry">Developer Tools / Productivity</span>
+            <h3 class="case-card__title">macOS Productivity Utilities</h3>
+            <div class="case-card__section">
+              <h4>Challenge</h4>
+              <p>Presenters and educators needed better cursor visibility during screen sharing and recordings. Existing solutions were either too complex or didn't work reliably on macOS.</p>
+            </div>
+            <div class="case-card__section">
+              <h4>Approach</h4>
+              <p>Built focused, single-purpose utilities: cursor spotlight for visibility during presentations, minimal system resource usage, native macOS integration. Philosophy: do one thing well, ship it, move on.</p>
+            </div>
+            <div class="case-card__section">
+              <h4>Outcome</h4>
+              <p>Published to App Store. Demonstrates approach: not every problem needs AI. Sometimes the right answer is a simple, well-designed tool.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <h2 class="section__title">How it works</h2>
+        
+        <div class="process__steps">
+          <div class="process__step">
+            <span class="process__number">1</span>
+            <h3 class="process__title">Intro call (30 minutes)</h3>
+            <p class="process__text">You share context and constraints. We ask direct questions. If there is no meaningful value to create, we say so.</p>
+          </div>
+          <div class="process__step">
+            <span class="process__number">2</span>
+            <h3 class="process__title">Proposal</h3>
+            <p class="process__text">Clear scope, timelines, fees, and decision points. No hidden upsell.</p>
+          </div>
+          <div class="process__step">
+            <span class="process__number">3</span>
+            <h3 class="process__title">Work</h3>
+            <p class="process__text">Short cycles, written artifacts, and explicit owners on your side.</p>
+          </div>
+          <div class="process__step">
+            <span class="process__number">4</span>
+            <h3 class="process__title">Exit on purpose</h3>
+            <p class="process__text">We design ourselves out. The goal is not dependency; the goal is a system you own.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who We Work With -->
+    <section class="section" id="fit">
+      <div class="container container--narrow">
+        <h2 class="section__title">Who Fractalic Studio is for</h2>
+        <div class="fit__content">
+          <p>We work best with:</p>
+          <ul class="fit__list">
+            <li>Founders and CEOs of companies between 5 and 150 people.</li>
+            <li>Businesses with real revenue and repeatable work, not just slides.</li>
+            <li>Leaders who are willing to make decisions about focus, not chase every AI trend.</li>
+          </ul>
+          <p class="fit__caveat">If you want inspirational keynotes or a chatbot on your homepage, we are not the right firm.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <h2 class="section__title">Frequently Asked Questions</h2>
+        
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary class="faq__question">What does "practical AI" mean?</summary>
+            <div class="faq__answer">
+              <p>AI that connects to real business outcomes — revenue, cost, risk, time. Not demos, not experiments without owners, not technology for its own sake.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">How is Fractalic Studio different from AI consultancies?</summary>
+            <div class="faq__answer">
+              <p>We don't sell transformation narratives. We map your existing structure, find where AI fits, and design systems with clear ownership. We build ourselves out, not in.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">What size companies do you work with?</summary>
+            <div class="faq__answer">
+              <p>Primarily 5-150 people. Large enough to have real processes and constraints. Small enough that founders and leadership still own key decisions.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">Do you implement AI tools or just advise?</summary>
+            <div class="faq__answer">
+              <p>Both. We design the system (processes, roles, metrics) and can support implementation. But we always leave you with documentation and governance to run it without us.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">How long does a typical engagement last?</summary>
+            <div class="faq__answer">
+              <p>AI Opportunity Audit: 2 weeks. Operating Blueprint: 4-6 weeks. Implementation Advisory: ongoing retainer with defined scope.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">What industries do you specialize in?</summary>
+            <div class="faq__answer">
+              <p>We focus on business structure, not industry. Our work spans e-commerce, logistics, professional services, and SaaS. The common thread: founders who want AI under control, not AI controlling them.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">Do you work with startups?</summary>
+            <div class="faq__answer">
+              <p>Yes, if you have real revenue and repeatable work. If you're pre-product or still searching for product-market fit, AI strategy is premature.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">What happens after the engagement ends?</summary>
+            <div class="faq__answer">
+              <p>You own everything: the documentation, the decision logs, the governance framework. We design for exit, not dependency.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container container--narrow">
+        <h2 class="section__title">About Fractalic Studio</h2>
+        <div class="about__content">
+          <p>Fractalic Studio was created for founders who think in systems and are tired of vague AI promises.</p>
+          <p>Our background is in strategy, operating models, and power structures inside organisations: who actually decides, who owns which outcomes, and how processes hold under stress.</p>
+          <p>We bring that lens to AI. Tools matter, but only inside a clear frame of authority, responsibility, and measurement.</p>
+        </div>
+        
+        <div class="about__principles">
+          <h3>Principles</h3>
+          <div class="principles__grid">
+            <div class="principle">
+              <h4>No hype</h4>
+              <p>We do not promise transformation, disruption, or "reinventing your business". We commit to specific changes in how work is done and measured.</p>
+            </div>
+            <div class="principle">
+              <h4>System over tools</h4>
+              <p>Tools are interchangeable. The system — processes, roles, decision rights — is what matters. We design for replaceable tools inside a stable frame.</p>
+            </div>
+            <div class="principle">
+              <h4>Authority first</h4>
+              <p>Every AI workflow has an owner. If there is no clear owner on the client side, we treat the initiative as a risk by default.</p>
+            </div>
+            <div class="principle">
+              <h4>Explicit trade-offs</h4>
+              <p>Every recommendation comes with what it will cost: time, attention, political capital, and maintenance.</p>
+            </div>
+            <div class="principle">
+              <h4>Measured or removed</h4>
+              <p>If an AI initiative cannot be meaningfully measured in terms the business cares about, it should not outlive an experiment.</p>
+            </div>
+            <div class="principle">
+              <h4>Exit built in</h4>
+              <p>We do not design dependence on ourselves. We build documentation, decision logs, and simple governance so the client can run the system without us.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section--dark" id="contact">
+      <div class="container container--narrow">
+        <h2 class="section__title section__title--light">Talk to Fractalic Studio</h2>
+        <p class="contact__intro">If you're responsible for a business and want AI to be an asset instead of a distraction, let's talk.</p>
+        
+        <div class="contact__calendar" id="my-cal-inline-fractalic-studio-ai-discovery-call"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <img src="assets/images/logo-w.webp" alt="Fractalic Studio" class="footer__logo">
+          <p class="footer__tagline">AI that serves your business, not the hype.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#services">Services</a>
+          <a href="#cases">Work</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Fractalic Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cal.com Script -->
+  <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "fractalic-studio-ai-discovery-call", {origin:"https://app.cal.com"});
+
+    Cal.ns["fractalic-studio-ai-discovery-call"]("inline", {
+      elementOrSelector:"#my-cal-inline-fractalic-studio-ai-discovery-call",
+      config: {"layout":"month_view","theme":"auto"},
+      calLink: "tervahagn/fractalic-studio-ai-discovery-call",
+    });
+
+    Cal.ns["fractalic-studio-ai-discovery-call"]("ui", {"hideEventTypeDetails":true,"layout":"month_view"});
+  </script>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
