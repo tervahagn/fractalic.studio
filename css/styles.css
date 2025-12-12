@@ -659,6 +659,29 @@ strong {
   margin: 0;
 }
 
+/* Featured case card with video */
+.case-card--featured {
+  grid-column: span 1;
+}
+
+.case-card__video {
+  margin: var(--space-md) 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.case-card__video video {
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .case-card--featured {
+    grid-column: span 2;
+  }
+}
+
 @media (min-width: 768px) {
   .cases__grid {
     grid-template-columns: repeat(2, 1fr);
