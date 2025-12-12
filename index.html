@@ -544,13 +544,17 @@
             </div>
           </article>
 
-          <article class="case-card case-card--featured">
+          <article class="case-card">
             <span class="case-card__industry">Content Production / Creative Automation</span>
             <h3 class="case-card__title">AI-Powered Creative Production</h3>
-            <div class="case-card__video">
-              <video controls muted playsinline poster="assets/images/logo-b.webp">
-                <source src="assets/video/fractalic-demo.mp4" type="video/mp4">
-              </video>
+            <div class="case-card__video-thumb" onclick="openVideoModal()">
+              <img src="assets/images/logo-b.webp" alt="Watch demo video">
+              <div class="case-card__play-btn">
+                <lord-icon src="https://cdn.lordicon.com/becebamh.json" trigger="hover" colors="primary:#ffffff"
+                  style="width:48px;height:48px">
+                </lord-icon>
+              </div>
+              <span class="case-card__video-label">Watch demo: 53 lines → .mp4</span>
             </div>
             <div class="case-card__section">
               <h4>Challenge</h4>
@@ -824,6 +828,16 @@
       </div>
     </div>
   </footer>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal" onclick="closeVideoModal(event)">
+    <div class="video-modal__content">
+      <button class="video-modal__close" onclick="closeVideoModal(event)">&times;</button>
+      <video id="modalVideo" controls>
+        <source src="assets/video/fractalic-demo.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
 
   <!-- Cal.com Script -->
   <script type="text/javascript">

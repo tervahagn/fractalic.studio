@@ -127,3 +127,33 @@ document.addEventListener('DOMContentLoaded', () => {
     hero.style.transform = 'translateY(0)';
   }
 });
+
+// Video Modal Functions
+function openVideoModal() {
+  const modal = document.getElementById('videoModal');
+  const video = document.getElementById('modalVideo');
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  video.play();
+}
+
+function closeVideoModal(event) {
+  // Only close if clicking backdrop or close button, not the video
+  if (event && event.target.classList.contains('video-modal__content')) return;
+  if (event && event.target.tagName === 'VIDEO') return;
+  
+  const modal = document.getElementById('videoModal');
+  const video = document.getElementById('modalVideo');
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+  video.pause();
+  video.currentTime = 0;
+}
+
+// Close modal on ESC key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeVideoModal();
+  }
+});
+

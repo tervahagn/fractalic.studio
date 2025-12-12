@@ -19,52 +19,68 @@
   --warn: #B45309;
   --error: #B91C1C;
   --white: #FFFFFF;
-  
+
   /* Typography */
   --font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-size-xs: 0.75rem;    /* 12px */
-  --font-size-sm: 0.875rem;   /* 14px */
-  --font-size-base: 1rem;     /* 16px */
-  --font-size-lg: 1.125rem;   /* 18px */
-  --font-size-xl: 1.375rem;   /* 22px */
-  --font-size-2xl: 1.75rem;   /* 28px */
-  --font-size-3xl: 2.25rem;   /* 36px */
-  --font-size-4xl: 3rem;      /* 48px */
-  
+  --font-size-xs: 0.75rem;
+  /* 12px */
+  --font-size-sm: 0.875rem;
+  /* 14px */
+  --font-size-base: 1rem;
+  /* 16px */
+  --font-size-lg: 1.125rem;
+  /* 18px */
+  --font-size-xl: 1.375rem;
+  /* 22px */
+  --font-size-2xl: 1.75rem;
+  /* 28px */
+  --font-size-3xl: 2.25rem;
+  /* 36px */
+  --font-size-4xl: 3rem;
+  /* 48px */
+
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-  
+
   --line-height-tight: 1.2;
   --line-height-base: 1.6;
   --line-height-relaxed: 1.8;
-  
+
   /* Spacing (8pt grid) */
-  --space-xs: 0.5rem;    /* 8px */
-  --space-sm: 0.75rem;   /* 12px */
-  --space-md: 1rem;      /* 16px */
-  --space-lg: 1.5rem;    /* 24px */
-  --space-xl: 2rem;      /* 32px */
-  --space-2xl: 3rem;     /* 48px */
-  --space-3xl: 4rem;     /* 64px */
-  --space-4xl: 6rem;     /* 96px */
-  
+  --space-xs: 0.5rem;
+  /* 8px */
+  --space-sm: 0.75rem;
+  /* 12px */
+  --space-md: 1rem;
+  /* 16px */
+  --space-lg: 1.5rem;
+  /* 24px */
+  --space-xl: 2rem;
+  /* 32px */
+  --space-2xl: 3rem;
+  /* 48px */
+  --space-3xl: 4rem;
+  /* 64px */
+  --space-4xl: 6rem;
+  /* 96px */
+
   /* Border Radius */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
-  
+
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
   --shadow-card: 0 8px 20px rgba(15, 23, 42, 0.06);
   --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.1);
-  
+
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 200ms ease;
   --transition-slow: 300ms ease;
-  
+
   /* Layout */
   --max-width: 1200px;
   --max-width-narrow: 800px;
@@ -112,14 +128,20 @@ a:hover {
   color: var(--accent-hover);
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
 /* --------------------------------------------------------------------------
    3. Typography
    -------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
   color: var(--ink);
@@ -203,7 +225,7 @@ strong {
   .section {
     padding: var(--space-4xl) 0;
   }
-  
+
   .section__title {
     font-size: var(--font-size-3xl);
   }
@@ -329,11 +351,11 @@ strong {
   .nav__menu {
     display: block;
   }
-  
+
   .nav__cta {
     display: inline-flex;
   }
-  
+
   .nav__toggle {
     display: none;
   }
@@ -390,12 +412,10 @@ strong {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(249, 250, 251, 0.85) 0%,
-    rgba(249, 250, 251, 0.95) 50%,
-    rgba(249, 250, 251, 1) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(249, 250, 251, 0.85) 0%,
+      rgba(249, 250, 251, 0.95) 50%,
+      rgba(249, 250, 251, 1) 100%);
 }
 
 .hero__content {
@@ -435,7 +455,7 @@ strong {
   .hero__title {
     font-size: var(--font-size-4xl);
   }
-  
+
   .hero__subtitle {
     font-size: var(--font-size-xl);
   }
@@ -488,7 +508,7 @@ strong {
   .problem__grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .problem__card {
     flex-direction: column;
     text-align: center;
@@ -692,7 +712,7 @@ strong {
   .cases__grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   /* Make first two cards span full width on large screens */
   .case-card:nth-child(1),
   .case-card:nth-child(2) {
@@ -747,7 +767,7 @@ strong {
   .process__steps {
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
   .process__step {
     flex-direction: column;
     text-align: center;
@@ -991,4 +1011,120 @@ strong {
 ::selection {
   background-color: var(--accent);
   color: var(--white);
+}
+
+/* --------------------------------------------------------------------------
+   19. Video Thumbnail & Modal
+   -------------------------------------------------------------------------- */
+.case-card__video-thumb {
+  position: relative;
+  margin: var(--space-md) 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--ink);
+  aspect-ratio: 16 / 9;
+}
+
+.case-card__video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.6;
+  transition: opacity var(--transition-base);
+}
+
+.case-card__video-thumb:hover img {
+  opacity: 0.4;
+}
+
+.case-card__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-base), background var(--transition-base);
+}
+
+.case-card__video-thumb:hover .case-card__play-btn {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: var(--accent-hover);
+}
+
+.case-card__video-label {
+  position: absolute;
+  bottom: var(--space-sm);
+  left: var(--space-sm);
+  right: var(--space-sm);
+  font-size: var(--font-size-xs);
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.6);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+/* Video Modal */
+.video-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.video-modal.active {
+  display: flex;
+}
+
+.video-modal__content {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+
+.video-modal__close {
+  position: absolute;
+  top: calc(-1 * var(--space-xl));
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: var(--space-xs);
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity var(--transition-fast);
+}
+
+.video-modal__close:hover {
+  opacity: 1;
+}
+
+.video-modal__content video {
+  width: 100%;
+  border-radius: var(--radius-md);
+}
+
+/* --------------------------------------------------------------------------
+   20. Process Step Icon Background
+   -------------------------------------------------------------------------- */
+.process__step lord-icon {
+  background: var(--accent);
+  border-radius: 50%;
+  padding: var(--space-xs);
 }
