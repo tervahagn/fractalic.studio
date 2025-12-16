@@ -44,8 +44,11 @@
   <meta property="twitter:image" content="https://fractalic.studio/assets/images/og-image.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-  <link rel="apple-touch-icon" href="assets/images/logo-b.webp">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo-b.webp">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo-b.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo-b.webp">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,6 +118,35 @@
       "name": "Fractalic Studio Team"
     },
     "sameAs": ["https://www.linkedin.com/company/fractalic-studio"]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Fractalic Studio",
+    "url": "https://fractalic.studio",
+    "description": "AI advisory for founders and leadership teams",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Fractalic Studio"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://fractalic.studio"
+      }
+    ]
   }
   </script>
 
@@ -241,6 +273,17 @@
         </div>
         <p class="hero__microcopy">No decks. We talk through your situation, then decide if it makes sense to work
           together.</p>
+        
+        <!-- TL;DR Block -->
+        <div class="hero__tldr">
+          <h2 class="hero__tldr-title">What we do:</h2>
+          <ul class="hero__tldr-list">
+            <li>Map where AI can move real numbers in your business</li>
+            <li>Design workflows, roles, and governance — not just tools</li>
+            <li>Build systems you own and can run without us</li>
+            <li>Measure everything that matters, drop what doesn't</li>
+          </ul>
+        </div>
       </div>
     </section>
 

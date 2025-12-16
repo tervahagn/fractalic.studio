@@ -451,6 +451,50 @@ strong {
   font-style: italic;
 }
 
+/* TL;DR Block */
+.hero__tldr {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  background: rgba(5, 150, 105, 0.08);
+  border: 1px solid rgba(5, 150, 105, 0.2);
+  border-radius: var(--radius-md);
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__tldr-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hero__tldr-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__tldr-list li {
+  position: relative;
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-xs);
+  font-size: var(--font-size-sm);
+  color: var(--ink);
+}
+
+.hero__tldr-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: var(--font-weight-semibold);
+}
+
 @media (min-width: 768px) {
   .hero__title {
     font-size: var(--font-size-4xl);

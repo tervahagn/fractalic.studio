@@ -163,11 +163,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (logoVideo) {
     logoVideo.addEventListener('ended', () => {
-      // Wait 60 seconds before playing again
+      // Wait 30 seconds before playing again
       setTimeout(() => {
         logoVideo.currentTime = 0;
         logoVideo.play();
-      }, 60000); // 60 seconds = 60000ms
+      }, 30000); // 30 seconds = 30000ms
     });
   }
 });
