@@ -956,7 +956,9 @@ strong {
 
 .contact__calendar {
   width: 100%;
-  min-height: 600px;
+  min-height: 500px;
+  max-width: 900px;
+  margin: 0 auto;
   background: var(--white);
   border-radius: var(--radius-md);
   overflow: hidden;
