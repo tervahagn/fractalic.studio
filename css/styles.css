@@ -764,6 +764,23 @@ strong {
   }
 }
 
+/* Case card external link */
+.case-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--accent);
+  transition: gap var(--transition-fast);
+}
+
+.case-card__link:hover {
+  gap: var(--space-sm);
+  color: var(--accent-hover);
+}
+
 /* --------------------------------------------------------------------------
    12. Process
    -------------------------------------------------------------------------- */
